@@ -10,7 +10,7 @@
   <% @books.each do |book| %>
     <tr>
      <td><%= book.title %></td><td><%= book.body %></td>
-     <td></td>
+     <td><%= link_to 'show', "/books/#{book.id}" %></td>
     </tr>
   <% end %>
 </table>
